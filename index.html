@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astha Digital Soulution</title>
+    <link rel="icon" href="img/digital_india_logo.png">
+    <style>
+        body {
+            background-color: #131212;
+        }
+
+        .header {
+            display: flex;
+            height: 50px;
+
+            border: blueviolet solid 0px;
+            position: sticky;
+            top: 0px;
+            color: gold;
+            align-items: center;
+            justify-content: right;
+
+
+
+        }
+
+        .header h1 {
+
+            opacity: 0.8;
+            letter-spacing: 8px;
+            text-shadow: -7px -7px 25px gold;
+            border-bottom: gold solid 5px;
+            /* text-align: center; */
+        }
+
+        .header::before {
+            position: absolute;
+            content: "";
+            background-color: #181717;
+            opacity: 0.8;
+            z-index: -1;
+            height: 50px;
+            width: 100%;
+        }
+
+        .navbar {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            border-bottom: blueviolet solid 5px;
+            position: sticky;
+            top: 50px;
+            align-items: center;
+        }
+
+        .navbar::before {
+            position: absolute;
+            content: "";
+            background-color: #181717;
+            opacity: 0.8;
+            z-index: -1;
+            height: 50px;
+            width: 100%;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            /* font-size: 34px; */
+            color: rgb(241, 243, 245);
+        }
+
+        .navbar ul li {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            height: 30px;
+            background-color: rgb(10, 10, 10);
+            margin-left: 20px;
+            border-radius: 10px;
+            box-shadow: -2px -2px 15px gold;
+            font-size: 25px;
+            color: wheat;
+
+
+        }
+        a{
+            text-decoration: none;
+            font-size: 25px;
+            color: wheat;
+        }
+        .navbar ul li img{
+            width:20px;
+            height:20px;
+            padding-right: 5px;
+        }
+
+        .navbar ul li:hover {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgb(240, 252, 246);
+            margin-left: 10px;
+            border-radius: 10px;
+            color: black;
+            font-size: 27px;
+            box-shadow: -7px -7px 10px rgba(167, 167, 173, 0.7);
+            cursor: pointer;
+
+        }
+
+       
+
+        #logo{
+            padding-top: 5px;
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+        #logo img{
+            width:100px;
+            height:50px;
+        }
+
+        .main_body {
+            background-image: url(/img/PHOTOGRAPHY.jpg);
+            opacity: 2;
+            width: 100%;
+            color: #e9e1e1;
+            height: 900px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-bottom:rgb(77, 75, 75) solid 1px ;
+        }
+       .main_box{
+           display: block;
+           
+           /* justify-content: center; */
+           /* align-items: center; */
+           width:100%;
+           height:297px;
+           border:transparent solid 2px;
+       }
+       .main_box h1{
+           letter-spacing: 4px;
+           margin-left: 20px;
+           color:#dbc7e9;
+
+           
+       }
+       .sub_box{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       .sub_box_cont{
+           border:#e9e1e1 solid 0px;
+           width:400px;
+           height:200px;
+           padding-left: 50px;
+       }
+       #sub_box_cont1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:180px;
+            height:200px;
+       }
+       #sub_box_cont1 img{
+           border: gold solid 3px;
+           border-radius: 100%;
+           box-shadow: gold 0px 0px 15px;
+       }
+       #sub_box_cont3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:180px;
+            height:200px;
+            
+       }
+       #sub_box_cont3 img{
+           border: gold solid 3px;
+           border-radius: 100%;
+           box-shadow: gold 0px 0px 15px;
+           width: 125px;
+
+       }
+       #sub_box_cont1 img:hover{
+            transform: scale(1.09);
+
+       }
+       #sub_box_cont3 img:hover{
+            transform: scale(1.09);
+
+       }
+
+       #sub_box_cont5 img:hover{
+            transform: scale(1.09);
+
+       }
+       #sub_box_cont5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:180px;
+            height:200px;
+       }
+       #sub_box_cont5 img{
+           border: gold solid 3px;
+           border-radius: 100%;
+           box-shadow: gold 0px 0px 15px;
+           width: 125px;
+
+       }
+       #sub_box_cont2{
+           display: block;
+       }
+       .finance_cont{
+           width:350px;
+           margin-top: 5px;
+           padding-top: 5px;
+           padding-bottom: 5px;
+           font-size: 24px;
+           letter-spacing: 5px;
+           border-bottom: solid 2px goldenrod;
+           text-align: center;
+
+       }
+       .finance_cont:hover{
+           transform: scale(1.06);
+
+
+       }
+      
+
+       #main_box_1{
+           background-image: linear-gradient(to right, rgb(1, 22, 1), rgba(10, 9, 9, 0.822));
+       }
+       #main_box_2{
+           background-image: linear-gradient(to right, rgb(31, 8, 56), rgba(10, 9, 9, 0.822));
+       }
+       #main_box_3{
+           background-image: linear-gradient(to right, rgb(59, 3, 50), rgba(10, 9, 9, 0.822));
+       }
+
+        .footer_sec {
+            color: #e9e1e1;
+            font-size: 30px;
+        }
+
+        .footer_sec {
+            display: flex;
+            justify-content: right;
+            
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom:rgb(77, 75, 75) solid 5px;
+            height:200px;
+        }
+
+        .footer_box {
+            height: 150px;
+            width: 350px;
+            margin-right:0px;
+            margin-left:200px;
+            margin-top: 10px;
+            padding-left: 20px;
+            padding-top: 5px;
+            border-top: rgb(77, 75, 75) solid 5px;
+            letter-spacing: 2px;
+            text-shadow: rgb(189, 186, 186) 2px 2px 10px;
+
+
+        }
+
+        #address_line {
+            font-size: 20px;
+            text-shadow: none;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            line-height: 140%;
+            color: grey;
+            
+        }
+        #contact_line {
+            font-size: 20px;
+            text-shadow: none;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            line-height: 140%;
+            color: grey;
+            
+        }
+
+        #footer_box_2 {
+            /* display: flex; */
+        }
+
+        #footer_box_2 img {
+            width: 35px;
+            height: 35px;
+            margin-right: 20px;
+        }
+
+        #footer_box_1 {
+            /* display: flex; */
+        }
+
+        #footer_box_1 img {
+            width: 35px;
+            height: 35px;
+            margin-right: 20px;
+        }
+        .address_cont{
+            display: flex;
+
+        }
+        #footer_box_3{
+            width:500px;
+            border: none;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-end;
+
+            
+        }
+        .social_logo img{
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+        }
+        .social_logo img{
+            width:40px;
+            height:40px;
+        }
+        .social_logo img:hover{
+            width:50px;
+            height:50px;
+            cursor: pointer;
+        }
+
+        #copyright{
+            text-align: right;
+            color:grey;
+            letter-spacing: 2px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            padding-right: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <h1>Astha Digital Solution</h1>
+        <div id="logo">
+    
+            <img src="img/digital_india_logo.png">
+        </div>
+        
+    </div>
+    <div class="navbar">
+        
+        <ul>
+            <a href="#"><li>About Us</li></a>
+            <a href="index.html"><li><img src="img/house-user-solid.svg">Home</li></a>
+            <a href="#"><li>Services</li></a>
+            <a href="#"><li>Online</li></a>
+        </ul>
+        
+    </div>
+    <div class="main_body">
+        <div class="main_box" id="main_box_1">
+            <div>
+                <h1>Financial Services</h1>
+            </div>
+            <div class="sub_box">
+                <div class="sub_box_cont" id="sub_box_cont1">
+                    <img src="img/aeps_logo.png">
+                </div>
+                <div class="sub_box_cont" id="sub_box_cont2">
+                 <div class="finance_cont"> Mony Transfer</div>
+                 <div class="finance_cont"> Instant Mony</div>
+                 <div class="finance_cont"> Life Insurance</div>   
+                 <div class="finance_cont"> Motar Insurance</div>
+                </div>
+            </div>
+    </div>
+    <div class="main_box" id="main_box_2">
+            <div>
+
+                <h1>Digital Services</h1>
+            </div>
+            <div class="sub_box">
+                <div class="sub_box_cont" id="sub_box_cont3">
+                    <img src="img/csc_logo_round.png">
+                </div>
+                <div class="sub_box_cont" id="sub_box_cont4">
+                 <div class="finance_cont"> Adhar Update</div>
+                 <div class="finance_cont"> PAN Card Service</div>
+                 <div class="finance_cont"> Domicile Certificate</div>   
+                 <div class="finance_cont"> Birth Certificate</div>
+                </div>
+            </div>
+    </div>
+    <div class="main_box" id="main_box_3">
+            <div>
+                <h1>Photography</h1>
+            </div>
+            <div class="sub_box">
+                <div class="sub_box_cont" id="sub_box_cont5">
+                    <img src="img/photo_logo.png">
+                </div>
+                <div class="sub_box_cont" id="sub_box_cont6">
+                 <div class="finance_cont"> Adhar Update</div>
+                 <div class="finance_cont"> PAN Card Service</div>
+                 <div class="finance_cont"> Domicile Certificate</div>   
+                 <div class="finance_cont"> Birth Certificate</div>
+                </div>
+            </div>    
+    </div>
+
+    </div>
+    <footer id="footer">
+        <div class="footer_sec" id="footer_sec">
+            <div class="footer_box" id="footer_box_1">
+                <div class="address_cont">
+                    <img src="img/location-dot-solid.svg" alt="location-dot-solid">
+                    Address
+                </div>
+                <div id="address_line">
+                    Gauhaniya, Rewa Road,<br> Prayagraj<br>Uttar Pradesh -211008
+                </div>
+
+            </div>
+
+            <div class="footer_box" id="footer_box_2">
+                <div class="contact_cont">
+                <img src="img/phone-solid.svg" alt="envelop-solid">Contact Us
+                </div>
+                <div id="contact_line">
+                Visit Us: www.asthadigital.in<br>
+                E-mail: brikum1994@gmail.com <br>
+                Contact No.: 9026297134
+                </div>
+            </div>
+
+            <div class="footer_box" id="footer_box_3">
+                <div class="social_logo"><img src="img/fb_logo.png"> </div>
+                <div class="social_logo"><img src="img/insta_logo.png"></div>
+                <div class="social_logo"><img src="img/twit.png"></div>
+
+            </div>
+            
+        </div>
+        <div id="copyright">
+            &copy; Copyright reserved- Astha digital
+        </div>
+    </footer>
+</body>
+
+</html>
